@@ -24,4 +24,10 @@ app.post('/voluntarios', (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Rodando na porta ${PORT}`));
+app.listen(PORT, () => {
+    console.log(`-----------------------------------------`);
+    console.log(`Servidor ligado e operando em pleno funcionamento!`);
+    console.log(`Rota: http://localhost:${PORT}/voluntarios`);
+    console.log(`Aguardando requisições no Postman...`);
+    console.log(`-----------------------------------------`);
+});
